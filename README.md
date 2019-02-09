@@ -24,9 +24,6 @@ Integrate your application with the PayU platform. Create a connector using the
  [PayU Latam Payments PHP SDK](https://github.com/developers-payu-latam/payu-latam-php-payments-sdk)
  and use that connector to connect to the PayU ecosystem.
 
-<a name="installation"></a>
-### Installation
-
 <a name="requirements"></a>
 ### Requirements
 
@@ -35,6 +32,9 @@ Integrate your application with the PayU platform. Create a connector using the
   * XML extension
   * mbstring extension
   * JSON extension
+
+<a name="installation"></a>
+### Installation
 
 #### Copy this project
 
