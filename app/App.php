@@ -22,7 +22,7 @@ class App
 
         $router = new RouteCollector();
 
-        $router->controller('/', \App\Controllers\Controller::class);
+        $router->controller('/payments', \App\Controllers\Payments::class);
 
         $dispatcher = new \Phroute\Phroute\Dispatcher($router->getData());
 

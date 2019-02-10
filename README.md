@@ -7,7 +7,7 @@
 		<img src="https://img.shields.io/badge/stability-stable-green.svg" alt="Status">
 	</a>
 	<a href="#changelog">
-		<img src="https://img.shields.io/badge/release-v0.0.0.2-blue.svg" alt="Version">
+		<img src="https://img.shields.io/badge/release-v0.0.0.3-blue.svg" alt="Version">
 	</a>
 	<a href="#changelog">
 		<img src="https://img.shields.io/badge/update-february-yellowgreen.svg" alt="Update">
@@ -188,9 +188,14 @@ $ sudo service apache2 restart
 
 ### Routes
 
-  * `get` => `/payments` - This method is used for testing the api. e.g.:
+  * `post` => `/payments` - This method is used for testing the api. e.g.:
 
     > uri = `/public/payments`
+
+<a name="test"></a>
+## :100: Running the tests
+
+Use 'index.html' for testing.
 
 <a name="built"></a>
 ## :wrench: Built With
@@ -200,6 +205,34 @@ $ sudo service apache2 restart
 
 <a name="changelog"></a>
 ## :information_source: Changelog
+
+**0.0.0.3** (02/10/2019)
+
+  * <table border="0" cellpadding="4">
+		<tr>
+			<td>
+				<strong>Language:</strong>
+			</td>
+			<td>
+				PHP
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<strong>Changes:</strong>
+			</td>
+			<td>
+				<ul>
+					<li>
+						Change the 'Payments' route to POST method
+					</li>
+					<li>
+						Separate the payment controller
+					</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
 
 **0.0.0.2** (02/09/2019)
 
