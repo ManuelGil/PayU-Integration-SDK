@@ -195,7 +195,7 @@ $ sudo service apache2 restart
 <a name="test"></a>
 ## :100: Running the tests
 
-Use 'index.html' for testing.
+Use `[index.html](https://github.com/ManuelGil/PayU-Integration-SDK/blob/master/index.html)` for testing.
 
 <a name="built"></a>
 ## :wrench: Built With
