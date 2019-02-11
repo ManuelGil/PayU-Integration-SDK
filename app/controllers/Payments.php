@@ -135,7 +135,8 @@ class Payments
                 $response->transactionResponse->trazabilityCode;
                 $response->transactionResponse->responseCode;
                 $response->transactionResponse->responseMessage;
-                echo json_encode($response);
+                
+                return $response;
             }
         } catch (\Exception $e) {
             \App\Log::logError($e->getMessage());
