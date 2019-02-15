@@ -9,11 +9,15 @@ class App
 
     function __construct()
     {
-        $baseDir = str_replace(basename($_SERVER['SCRIPT_NAME']), '', $_SERVER['SCRIPT_NAME']);
+        \PayU::$apiKey          =   API_KEY;
+        \PayU::$apiLogin        =   API_LOGIN;
+        \PayU::$merchantId      =   MERCHANT_ID;
+        \PayU::$language        =   \SupportedLanguages::EN; // Enter the language you prefer here.
+        \PayU::$isTest          =   DEBUG; // Leave it true when testing.
 
-        $baseUrl = 'http://' . $_SERVER['HTTP_HOST'];
-
-        define('BASE_URL', $baseUrl);
+        \Environment::setPaymentsCustomUrl(PAYMENTS_URL);
+        \Environment::setReportsCustomUrl(QUERIES_URL);
+        \Environment::setSubscriptionsCustomUrl(SUBSCRIPTIONS_URL);
     }
 
     public function run()

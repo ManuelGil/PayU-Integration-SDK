@@ -13,16 +13,6 @@ if (DEBUG) {
     }
 }
 
-PayU::$apiKey = API_KEY;
-PayU::$apiLogin = API_LOGIN;
-PayU::$merchantId = MERCHANT_ID;
-PayU::$language = SupportedLanguages::ES;
-PayU::$isTest = DEBUG; // Ensure to send the prueba as true.
-
-Environment::setPaymentsCustomUrl(PAYMENTS_URL);
-Environment::setReportsCustomUrl(QUERIES_URL);
-Environment::setSubscriptionsCustomUrl(SUBSCRIPTIONS_URL);
-
 $app = new \App\App;
 
 $app->run();
