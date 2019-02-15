@@ -195,53 +195,53 @@ $ sudo service apache2 restart
 ```
   args = [
     // Enter the reference code here.
-    string	`referenceCode`				=>	"payment_test_00000001",
+    string	$referenceCode				=>	"payment_test_00000001",
     // Enter the description here.
-    string	`description`    			=>	"payment test",
+    string	$description    			=>	"payment test",
     // Enter the value here.
-    string	`amount`          		=>	"20000",
+    string	$amount          			=>	"20000",
     // Enter the value of the VAT (Value Added Tax only valid for Colombia) of the transaction,
     // if no VAT is sent, the system will apply 19% automatically. It can contain two decimal digits.
     // Example 19000.00. In case you have no VAT you should fill out 0.
-    string	`tax`             		=>	"3193",
+    string	$tax             			=>	"3193",
     // Enter the value of the base value on which VAT (only valid for Colombia) is calculated.
     // If you do not have VAT should be sent to 0.
-    string	`taxReturnBase`				=>	"16806",
+    string	$taxReturnBase				=>	"16806",
     // Enter the currency here.
-    string	`currency`        		=>	"COP",
+    string	$currency        			=>	"COP",
     // Enter the name of the buyer here.
-    string	`buyerName`    				=>	"First name and second buyer name",
+    string	$buyerName    				=>	"First name and second buyer name",
     // Enter the email of the buyer here.
-    string	`buyerEmail`      		=>	"buyer_test@test.com",
+    string	$buyerEmail      			=>	"buyer_test@test.com",
     // Enter the telephone number of the buyer here.
-    string	`buyerPhone`      		=>	"7563126",
+    string	$buyerPhone      			=>	"7563126",
     // Enter the contact document of the buyer here.
-    string	`buyerDocument`   		=>	"5415668464654",
+    string	$buyerDocument   			=>	"5415668464654",
     // Enter the name of the payer here.
-    payerName       		=>	"APPROVED",
+    string  $payerName   				=>	"APPROVED",
     // Enter the email of the payer here.
-    string	`payerEmail`      		=>	"payer_test@test.com",
+    string	$payerEmail      			=>	"payer_test@test.com",
     // Enter the telephone number of the payer here.
-    string	`payerPhone`      		=>	"7563126",
+    string	$payerPhone      			=>	"7563126",
     // Enter the contact document of the payer here.
-    string	`payerDocument`   		=>	"5415668464654",
+    string	$payerDocument   			=>	"5415668464654",
     // Enter the address of the payer here.
-    string	`shippingAddress`			=>	"calle 100",
-    string	`shippingCity`				=>	"Bogota",
-    string	`shippingState`				=>	"Bogota",
-    string	`shippingCountry`			=>	"CO",
-    shippingPostalCode						=>  "000000",
+    string	$shippingAddress			=>	"calle 100",
+    string	$shippingCity				=>	"Bogota",
+    string	$shippingState				=>	"Bogota",
+    string	$shippingCountry			=>	"CO",
+    string  $shippingPostalCode			=>  "000000",
     // Enter the number of credit card here.
-    string	`cardNumber`					=>	"4097440000000004",
+    string	$cardNumber					=>	"4097440000000004",
     // Enter the expiration date of the credit card here.
-    string	`cardExpirationDate`	=>	"2020/12",
+    string	$cardExpirationDate			=>	"2020/12",
     // Enter the security code of the credit card here.
-    string	`cardSecurityCode`		=>	"321",
+    string	$cardSecurityCode			=>	"321",
     // Enter the credit card name here. 
     // VISA||MASTERCARD||AMEX||DINERS
-    string	`paymentMethod`				=>	"VISA",
+    string	$paymentMethod				=>	"VISA",
     // Enter the number of installments here.
-    string	`installments`				=>	"1",
+    string	$installments				=>	"1",
   ]
 ```
 
@@ -258,36 +258,36 @@ $ sudo service apache2 restart
 ```
   args = [
     // Enter the reference code here.
-    string	`referenceCode`			=>	"payment_test_00000001",
+    string	$referenceCode				=>	"payment_test_00000001",
     // Enter the description here.
-    string	`description`				=>	"payment test",
+    string	$description				=>	"payment test",
     // Enter the value here.
-    string	`amount`						=>	"20000",
+    string	$amount						=>	"20000",
     // Enter the value of the VAT (Value Added Tax only valid for Colombia) of the transaction,
     // if no VAT is sent, the system will apply 19% automatically. It can contain two decimal digits.
     // Example 19000.00. In case you have no VAT you should fill out 0.
-    string	`tax`								=>	"3193",
+    string	$tax						=>	"3193",
     // Enter the value of the base value on which VAT (only valid for Colombia) is calculated.
     // If you do not have VAT should be sent to 0.
-    string	`taxReturnBase`			=>	"16806",
+    string	$taxReturnBase				=>	"16806",
     // Enter the currency here.
-    string	`currency`					=>	"COP",
+    string	$currency					=>	"COP",
     // Enter the buyer's email here.
-    string	`buyerEmail`				=>	"buyer_test@test.com",
+    string	$buyerEmail					=>	"buyer_test@test.com",
     // Enter the payer's name here.
-    string	`payerName`					=>	"First name and second payer name",
+    string	$payerName					=>	"First name and second payer name",
     // Enter the payer's email here.
-    string	`payerEmail`				=>	"payer_test@test.com",
+    string	$payerEmail					=>	"payer_test@test.com",
     // Enter the payer's contact phone here.
-    string	`payerPhone`				=>	"7563126",
+    string	$payerPhone					=>	"7563126",
     // Enter the bank PSE code here.
-    string	`pseBank`						=>	"1007",
+    string	$pseBank					=>	"1007",
     // Enter the person type here (Natural or legal).
-    string	`personType`				=>	"N",
+    string	$personType					=>	"N",
     // Enter the payer's contact document here.
-    string	`payerDocument`			=>	"123456789",
+    string	$payerDocument				=>	"123456789",
     // Enter the payer’s document type here: CC, CE, NIT, TI, PP,IDC, CEL, RC, DE.
-    string	`payerDocumentType`	=>	"CC",
+    string	$payerDocumentType			=>	"CC",
   ]
 ```
 
