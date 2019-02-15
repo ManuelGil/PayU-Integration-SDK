@@ -192,7 +192,7 @@ $ sudo service apache2 restart
 
     > uri = `http://localhost/PayU-Integration-SDK/public/payments`
 
-```
+```php
   args = [
     // Enter the reference code here.
     string	$referenceCode				=>	"payment_test_00000001",
@@ -218,7 +218,7 @@ $ sudo service apache2 restart
     // Enter the contact document of the buyer here.
     string	$buyerDocument   			=>	"5415668464654",
     // Enter the name of the payer here.
-    string  $payerName   				=>	"APPROVED",
+    string	$payerName   				=>	"APPROVED",
     // Enter the email of the payer here.
     string	$payerEmail      			=>	"payer_test@test.com",
     // Enter the telephone number of the payer here.
@@ -230,7 +230,7 @@ $ sudo service apache2 restart
     string	$shippingCity				=>	"Bogota",
     string	$shippingState				=>	"Bogota",
     string	$shippingCountry			=>	"CO",
-    string  $shippingPostalCode			=>  "000000",
+    string	$shippingPostalCode			=>  "000000",
     // Enter the number of credit card here.
     string	$cardNumber					=>	"4097440000000004",
     // Enter the expiration date of the credit card here.
@@ -255,7 +255,7 @@ $ sudo service apache2 restart
 
     > uri = `http://localhost/PayU-Integration-SDK/public/payments/pse`
 
-```
+```php
   args = [
     // Enter the reference code here.
     string	$referenceCode				=>	"payment_test_00000001",
